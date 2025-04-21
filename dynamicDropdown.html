@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Menu with Dropdown</title>
+    <style>
+        /* Basic Reset */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            position: relative;
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        /* Submenu Styling */
+        .submenu {
+            display: none;
+            margin-left: 20px;
+        }
+
+        /* Show submenu on hover */
+        .menu-item:hover .submenu {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li class="menu-item"><a href="#">Home</a></li>
+        <li class="menu-item">
+            <a href="#">Services</a>
+            <ul class="submenu">
+                <li><a href="#">Submenu 4</a></li>
+                <li><a href="#">Submenu 5</a></li>
+                <li><a href="#">Submenu 6</a></li>
+            </ul>
+        </li>
+        <li class="menu-item"><a href="#">Contact</a></li>
+    </ul>
+
+</body>
+
+</html>
